@@ -1,0 +1,18 @@
+/* 기본 스타일 */
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+/* 미디어 쿼리: 화면 너비가 768px 미만일 때 */
+@media (max-width: 768px) {
+  .video-wrapper {
+    padding-bottom: 75%; /* 4:3 aspect ratio로 변경 */
+  }
+}
+button:hover {
+  background-color: #668cff; /* 밝은 파란색으로 변경 */
+  transition: background-color 0.3s ease; /* 부드러운 색 변경 효과 */
+}
