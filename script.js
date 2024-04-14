@@ -6,14 +6,12 @@ document.addEventListener('DOMContentLoaded', function() {
     "지식은 공유할수록 커진다. — 알렉산더 폰 훔볼트",
     "행동의 가치는 그 행동을 끝까지 이어가는 데 있다. — 카를로스 캐스타네다"
   ];
-  const iframeElement = document.getElementById('youtubeVideo');
   const videoIDs = ["gCdNHUYP1iE", "KNexS61fjus", "ATK7gAaZTOM", "Os_heh8vPfs"];
   const videoTitles = [
     "ILLIT (아일릿) ‘Magnetic’",
     "LE SSERAFIM (르세라핌) ‘Smart‘",
     "(여자)아이들((G)I-DLE) - ‘나는 아픈 건 딱 질색이니까(Fate)‘",
     "aespa 에스파 ‘Spicy‘"
-     iframeElement.src = `https://www.youtube.com/embed/${videoIDs[0]}`;
   ];
 
   let currentIndex = parseInt(localStorage.getItem('currentVideoIndex')) || 0;
